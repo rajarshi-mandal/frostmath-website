@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* This online.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+p#class {
+	margin-bottom: 0.5em;
+}
+
+div#dates {
+	color: #4e62f6;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-top: 0em;
+	margin-bottom: 0.4em;
+}
+
+ul#classes {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+a#drop {
+	background: #ffd891;
+}
+
+a#drop:hover, a#drop:active {
+	background: #aac8ff;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+}

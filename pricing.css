@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* This pricing.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+h1#ai, h1#cp {
+	margin-top: 0.5em;
+}
+
+h1#gi {
+	margin-top: 0.2em;
+}
+
+span.emp {
+	font-weight: 600;
+	color: #ff4000;
+}
+
+p.bold {
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: "Merriweather";
+	color: #4e62f6;
+}
+
+p#last {
+	margin-bottom: 0.5em;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+}

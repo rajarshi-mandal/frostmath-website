@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* This levels.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+div#contain {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "sum sum"
+						 "inp onl";
+}
+
+p#summary {grid-area: sum}
+div#inpn {grid-area: inp}
+div#onl {grid-area: onl}
+
+div#inpn {
+	padding-right: 5px;
+}
+
+div#onl,div#inpn {
+	margin-bottom: 8px;
+}
+
+img#team {
+	border: 6px solid #4e62f6;
+	border-radius: 45px;
+	margin-bottom: 8px;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+
+	div#contain {
+		display: block!important;
+	}
+}

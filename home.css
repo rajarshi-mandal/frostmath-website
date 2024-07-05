@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* This home.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+/* Custom Header with Book Promotion */
+
+ul.submenu {
+	top: 525px;
+}
+
+
+
+/* Blockquote */
+blockquote.frostquote {
+	font-size: 1.4em;
+	width: 100%;
+	margin: 15px auto;
+	font-family: "Open Sans", sans-serif;
+	font-style: italic;
+	color: #555555;
+	padding: 1.1em 17px 0.9em 63px;
+	border-left: 8px solid #4e62f6 ;
+	line-height: 1.6;
+	position: relative;
+	background: #dedfe5;
+}
+
+blockquote.frostquote::before {
+	font-family: "Arial",sans-serif;
+	content: "\201C";
+	color: #4e62f6;
+	font-size: 4em;
+	position: absolute;
+	left: 11px;
+	top: -13px;
+}
+
+blockquote.frostquote span {
+	display: block;
+	color: #353638;
+	font-style: normal;
+	font-weight: bold;
+	margin-top: 0.6em;
+}
+
+
+
+/* Book promotion */
+
+div#books {
+	margin: 0 0;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "book1 book2"
+						 "caption caption";
+}
+
+img#one {grid-area: book1}
+img#two {grid-area: book2}
+p#bookdescription {grid-area: caption}
+
+p#bookdescription {
+	margin-top: 0px;
+	color: #353638;
+	font-family: "Merriweather";
+	text-align: center;
+}
+
+img.book {
+	border: 4px solid black;
+	height: 25vh;
+}
+
+
+/* Header */
+
+header {
+	padding-top: 0px;
+	margin: 0 auto;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+img#logo {
+	height: 25vh;
+}
+
+
+
+/* Body */
+
+p#update {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: 600;
+	font-family: "Merriweather";
+	color: #4e62f6;
+	margin-bottom: 0.7em;
+}
+
+div#interested {
+	display: grid;
+	grid-template-columns: 1fr 1.7fr;
+	grid-gap: 16px;
+	grid-template-areas: "colone coltwo";
+}
+
+div#left {
+	padding-right: 13px;
+	border-right: 3px solid #ff4000;
+}
+
+div#left {grid-area: colone}
+div#right {grid-area: coltwo}
+
+p#email {
+	font-size: 3em;
+	background-color: #ff4000;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 900;
+	font-family: "Tahoma";
+	margin-top: 0;
+}
+
+h1#results {
+	margin-top: 0.7em;
+}
+
+p.int {
+	font-size: 1em;
+}
+
+ul#results {
+	margin-top: 0;
+	column-count: 2;
+	column-gap: 64px;
+	list-style-type: circle;
+	color: #ff4000;
+	font-size: 1.5em;
+}
+
+strong.year {
+	font-size: 1.5em;
+	font-style: bold;
+	color: #ff4000;
+	white-space: nowrap;
+}
+
+ul#results > li > p {
+	color: #000000;
+	font-size: 0.67em;
+	break-inside: avoid;
+}
+
+a#mail {
+	transition: color 1.3s;
+	transition: text-shadow 0.4s;
+	transition-delay: 0.2s;
+	transition-timing-function: ease-out;
+}
+
+a#mail:hover, a#mail:active {
+	color: #94a1ff;
+	text-shadow: 2px 2px 0px #000000;
+}
+
+div.fb-page:hover, div.fb-page:active {
+	transition: 0.5s;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-in;
+	box-shadow: 3px 3px 1px #000000;
+}
+
+/* Print */
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+
+	div#interested {
+		display: block;
+
+	}
+
+	p#email {
+		font-size: 1.5em;
+		color: black;
+		font-weight: 500;
+	}
+
+	p#states {
+		margin-top: 0;
+	}
+
+	div#left {
+		border-right: 0px;
+		padding: 0px;
+	}
+
+	ul#results {
+		column-count: 1;
+	}
+}

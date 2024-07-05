@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* This about.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+a#mc {
+	text-decoration: none;
+	color: #4e62f6;
+	transition: 1s;
+	transition-delay: 0.1s;
+}
+
+a#mc:hover, a#mc:active {
+	color: #9f4ef6;
+	font-size: 1.2em;
+}
+
+h1 {
+	margin-top: 0.3em;
+}
+
+div#contain {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto 419px;
+	grid-template-areas: "text pic";
+}
+
+div#word {grid-area: text}
+img#fd {grid-area: pic}
+
+img#fd {
+	border: 6px solid #4e62f6;
+	border-radius: 30px;
+	width: 400px;
+	margin-bottom: 12px;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+
+	div#contain {
+		display: block!important;
+	}
+}

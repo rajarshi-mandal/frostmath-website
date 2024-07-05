@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* This registration.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+ol {
+	margin-top: 0.5em;
+}
+
+address {
+	display: flex;
+	justify-content: center;
+}
+
+p#link {
+	display: none;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img,iframe {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+
+	p#link {
+		display: block!important;
+	}
+}

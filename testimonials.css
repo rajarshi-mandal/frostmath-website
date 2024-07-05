@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* This testimonials.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+div.info {
+	font-style: italic;
+	margin-top: 0.8em;
+	color: #4e62f6;
+	transition: 1s;
+	transition-delay: 0.2s;
+}
+
+div#a1 {
+	margin-top: -1em;
+}
+
+span.name {
+	font-weight: 900;
+	color: black;
+}
+
+span.cool {
+	color: #ff4000;
+	font-weight: 700;
+}
+
+div#container {
+	column-count: 2;
+}
+
+div.person {
+	break-inside: avoid;
+}
+
+div.info:hover, div.info:active {
+	font-size: 1.2em;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer,img {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+
+	div#container {
+		column-count: 1;
+	}
+
+	div.person {
+		break-inside: auto;
+	}
+}

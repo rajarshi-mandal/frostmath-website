@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* This locations.css file was written by Rajarshi Mandal for Frost Math LLC. */
+
+p#format {
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: "Merriweather";
+	color: #4e62f6;
+	margin-top: 0;
+}
+
+h1 {
+	margin-top: 0.5em;
+}
+
+p#sec {
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+img#chap {
+	border: 6px solid #4e62f6;
+	border-radius: 60px;
+}
+
+p#third {
+	margin-top: 0.6em;
+}
+
+p#last {
+	margin-bottom: 0.3em;
+}
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0;
+	}
+
+	body {
+		width: 100%!important;
+		padding: 1in!important;
+		margin: 0!important;
+	}
+
+	header,footer {
+		display: none;
+	}
+
+	h1 {
+		text-shadow: none;
+	}
+
+	img#chap {
+		border: none;
+		border-radius: 0px;
+	}
+}
