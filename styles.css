@@ -152,36 +152,23 @@ a.nav:hover, a.nav:active, a#current:hover, a#current:active, a.smenu:hover, a.s
 
 /* Submenu */
 
-a#drop {
-	position: relative;
-	display: inline;
-	white-space: nowrap;
-	margin-right: 0;
+div.drop1 {
+  float: left;
 }
 
-ul.submenu {
-	display: none;
-	position: absolute;
-	top: 342px;
-	left: 734px;
-	margin: 0;
-	padding: 0;
-	border: none;
-	list-style-type: none;
-	background-color: #d9ad5d;
+div.drop2 {
+  display: none;
+  position: absolute;
+  background-color: #d9ad5d;
 }
 
-a#drop:hover+ul.submenu, ul.submenu:hover {
-	display: block;
+div.drop2 a {
+  float: none;
+  display: block;
 }
 
-ul.submenu > li {
-	float: left;
-	clear: left;
-}
-
-ul.submenu:hover {	
-   display: block
+div.drop1:hover div.drop2 {
+  display: block;
 }
 
 a.smenu {
